@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ebebeb;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            max-height: 150px;
+            background-color: #1164ff;
+            color: #fff;
+            padding: 8px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 650px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(175, 175, 175, 0.856);
+        }
+
+        footer {
+            background-color: #1164ff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SENTIMENT ANALYSIS FROM TWITTER</h1>
+        <h3>Tugas Besar Mata Kuliah Cloud Computing</h3>
+        <h4>Dosen Pengampu: Suryo Adhi Wibowo, Ph.D.</h4>
+    </header>
+
+    <section>
+        <h2>ANGGOTA KELOMPOK 6</h2>
+        <p>- Adi Wijaya Sugiarto</p>
+        <p>- M. Hilmi</p>
+        <p>- M. Rafli Al-hasyimi</p>
+        
+    </section>
+
+    <section>
+        <h2>Hasil Analisis Sentimen</h2>
+        <form action="/predict" method="post">
+            <label for="text">Enter Text:</label>
+            <textarea name="text" rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Predict">
+        </form>        
+    </section>
+
+    <footer>
+        &copy; 2023 KELOMPOK 6
+    </footer>
+</body>
+</html>
